@@ -1,0 +1,185 @@
+body {
+  background-color: #C42021;
+}
+.main-title {
+  font-size: 8em;
+  text-align: center;
+  color: #37123C;
+  margin-top: 2%;
+}
+.main-title-description {
+  margin-top:-20px;
+  text-align: center;
+  color: #611C35;
+}
+p .byby {
+  font-style: italic;
+  font-weight: bold;
+  color: #5B2333;
+  font-size: 23px !important;
+}
+.list-of-contents h2 {
+  font-family: sans-serif;
+}
+.list-of-contents ul li {
+  list-style: square;
+  color: #F98948;
+}
+.list-of-contents ul li a {
+  color: #F98948;
+  font-style: italic;
+}
+.topic .topic-name {
+  color: #F28123;
+}
+#preprocessor_directives .topic-body ul li {
+  list-style: square;
+  font-size: 16px;
+}
+#preprocessor_directives .topic-body ul li li {
+  list-style: none;
+}
+#header_files table td {
+  text-align: center;
+}
+.header_files_text {
+  font-size: 20px;
+  font-weight: bold;
+}
+#header_files .paragraph p {
+  text-align: center;
+}
+#header_files .paragraph .p1 {
+  color: floralwhite;
+  margin-bottom: -15px;
+}
+#header_files .paragraph .p2 {
+  margin: auto;
+  width: 30%;
+  background-color: black;
+  color: orange;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 16px;
+}
+#header_files .paragraph .p2 .random1 {
+  color: palegreen;
+}
+.fa-windows {
+  color: #C0E0DE;
+  font-size: 50px;
+}
+.fa-linux {
+  color: yellow;
+  font-size: 50px;
+}
+.topic-name h2 {
+  font-weight: bold;
+}
+#variables ul li {
+  color: floralwhite;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 16px;
+  list-style: none;
+}
+#constants ul li {
+  color: floralwhite;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 16px;
+  list-style: none;
+}
+#strings table td {
+  text-align: center;
+}
+.random2 {
+  color: limegreen;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 16px;
+}
+.code_block {
+  margin: auto;
+  width: 35%;
+  background-color: black;
+  color: floralwhite;
+  text-align: center;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 16px;
+}
+.random3 {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 16px;
+}
+#assignment_operator table {
+  text-align: center;
+}
+.random4 {
+  text-decoration: line-through;
+}
+.nice_note {
+  margin: auto;
+  width: 30%;
+  background-color: purple;
+  color: violet;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+.random5 {
+  color: limegreen;
+}
+.code_box {
+  margin: auto;
+  width: 30%;
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  font-size: 16px;
+  padding-left:10px;
+}
+.code_box p {
+  margin-top: -20px;
+}
+.code_box_long {
+  margin: auto;
+  width: 60%;
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  font-size: 16px;
+  padding-left:10px;
+}
+.code_box_long p {
+  margin-top: -20px;
+}
+.code_box_longest {
+  margin: auto;
+  width: 95%;
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  font-size: 16px;
+  padding-left:10px;
+}
+.code_box_longest p {
+  margin-top: -20px;
+}
+.random6 {
+  color: magenta;
+}
+.int_color {
+  color: orange;
+}
+.random7 {
+  color: #dd6892;
+}
+.random8 {
+  color: purple;
+}
+.random9 {
+  color: tomato;
+}
