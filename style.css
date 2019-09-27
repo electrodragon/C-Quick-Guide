@@ -186,3 +186,15 @@ p .byby {
 .bold {
   font-weight: bold;
 }
+.syntax_box {
+  margin: auto;
+  width: 50%;
+  padding: 20px 20px;
+  background-color: purple;
+  color: violet;
+  font-family: monospace;
+  font-size: 16px;
+}
+.syntax_box p {
+  margin-top: -20px;
+}
