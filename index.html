@@ -2235,7 +2235,51 @@
       <div class="topic-name mb-4">
         <h2>Functions</h2>
       </div>
-      <div class="topic-body"></div>
+      <div class="topic-body">
+        <ul>
+          <li>
+            There are Two Types of functions:
+            <ol>
+              <li>
+                <span class="bold">Built-in / Pre-defined</span>
+                <ul>
+                  <li class="random3">main()</li>
+                  <li class="random3">printf()</li>
+                </ul>
+              </li>
+              <li class="bold">User Defined</li>
+            </ol>
+          </li>
+          <li>Execution of a C Program Starts From <span class="random3">main()</span></li>
+        </ul>
+        <div class="syntax_box">
+          <p class="mt-2">DataType function_name(parameters) &#123;</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;return parameter1+parameter2;</p>
+          <p>&#125;</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-6">
+              <h2 class="text-center mb-4 mt-3">Code</h2>
+              <div class="code_box_longest">
+                <p class="bold"><span class="text-warning">#include</span> &lt;<span style="color: palegreen;">stdio.h</span>&gt;</p>
+                <p class="mb-4">int <span class="random7">loveYou</span><span class="text-primary">(</span>int <span class="random9">var1</span>, int <span class="random9">var2</span><span class="text-primary">)</span>;</p>
+                <p>int <span class="random7">main</span><span class="text-primary">()</span> &#123;</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="random7">loveYou</span><span class="text-primary">(</span><span class="text-warning">5</span>, <span class="text-warning">6</span><span class="text-primary">)</span>;</p>
+                  <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-info">return</span> <span class="text-warning">0</span>;</p>
+                <p class="mb-4">&#125;</p>
+                <p>int <span class="random7">loveYou</span><span class="text-primary">(</span>int <span class="random9">var1</span>, int <span class="random9">var2</span><span class="text-primary">)</span>&nbsp;&#123;</p>
+                  <p>&nbsp;&nbsp;&nbsp;&nbsp;printf(<span class="random5">&quot;</span><span class="random9">%d</span> <span class="random5">Loves</span> </span><span class="random9">%d</span>",<span class="random10">var1</span>,<span class="random10">var2</span>);</p>
+                <p>&#125;</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+              <h2 class="text-center mb-4 mt-3">Output</h2>
+              <div class="code_box_long">
+                <p>5 Loves 6</p>
+              </div>
+            </div>
+        </div>
+      </div>
     </div>
 
     <hr class="mt-5 mb-5">
