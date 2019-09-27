@@ -2135,7 +2135,33 @@
       <div class="topic-name mb-4">
         <h2>continue</h2>
       </div>
-      <div class="topic-body"></div>
+      <div class="topic-body">
+        <p>It Moves Execution of Currently Executing Block to Start !</p>
+        <p class="code_block"><span class="text-primary">continue</span>;</p>
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <h2 class="text-center mb-4 mt-3">Code</h2>
+            <div class="code_box_long">
+              <p>int <span class="random9">a</span> = <span class="text-warning">1</span>;</p>
+              <p>while (<span class="random7">a &lt; 5</span>) &#123;</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;printf(<span class="random5">&quot;<span class="random9">%d</span><span class="text-primary">\n</span>&quot;</span>,<span class="random6">a</span>);</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;a++;</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-primary">continue</span>;</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;printf(<span class="random5">&quot;KING&quot;</span>);</p>
+              <p>&#125;</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <h2 class="text-center mb-4 mt-3">Output</h2>
+            <div class="code_box">
+              <p>1</p>
+              <p>2</p>
+              <p>3</p>
+              <p>4</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <hr class="mt-5 mb-5">
@@ -2144,7 +2170,29 @@
       <div class="topic-name mb-4">
         <h2>break</h2>
       </div>
-      <div class="topic-body"></div>
+      <div class="topic-body">
+        <p>It Stops Execution of Currently Executing Block !</p>
+        <p class="code_block"><span class="text-primary">break</span>;</p>
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <h2 class="text-center mb-4 mt-3">Code</h2>
+            <div class="code_box_long">
+              <p>int <span class="random9">a</span> = <span class="text-warning">1</span>;</p>
+              <p>while (<span class="random7">a &lt; 5</span>) &#123;</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;printf(<span class="random5">&quot;SINGH&quot;</span>);</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-primary">break</span>;</p>
+              <p>&#125;</p>
+              <p>printf(<span class="random5">&quot;&nbsp;IS KING !&quot;</span>);</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <h2 class="text-center mb-4 mt-3">Output</h2>
+            <div class="code_box_long">
+              <p>SINGH IS KING !</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <hr class="mt-5 mb-5">
@@ -2153,7 +2201,32 @@
       <div class="topic-name mb-4">
         <h2>goto</h2>
       </div>
-      <div class="topic-body"></div>
+      <div class="topic-body">
+        <p>It is like a Check Point, You Declare a CheckPoint in UPPERCASE, and you can reach it anytime.</p>
+        <p class="code_block"><span class="text-primary">goto</span> <span class="random6">SOME_CHECK_POINT</span>;</p>
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <h2 class="text-center mb-4 mt-3">Code</h2>
+              <div class="code_box_long">
+                  <p>int <span class="random9">a</span> = <span class="text-warning">1</span>;</p>
+                  <p class="random6">JUNGLE:</p>
+                  <p>a++;</p>
+                  <p>while (<span class="random7">a &lt; 5</span>) &#123;</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;printf(<span class="random5">&quot;<span class="random9">%d</span><span class="text-primary">\n</span>&quot;</span>,<span class="random6">a</span>);</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-primary">goto</span> <span class="random6">JUNGLE</span>;</p>
+                  <p>&#125;</p>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <h2 class="text-center mb-4 mt-3">Output</h2>
+            <div class="code_box">
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <hr class="mt-5 mb-5">
