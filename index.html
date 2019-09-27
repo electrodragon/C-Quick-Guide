@@ -1956,16 +1956,64 @@
       <div class="topic-name mb-4">
         <h2>Switch</h2>
       </div>
-      <div class="topic-body"></div>
+      <div class="topic-body">
+        <div class="code_box_longest">
+          <p>switch (n) &#123;</p>
+          <p>&nbsp;&nbsp;&nbsp;case 1:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-warning">//</span> <span class="text-secondary">code to be executed if n = 1;</span></p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf(<span class="random5">&quot;YAY !&quot;</span>);</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;</p>
+          <p>&nbsp;&nbsp;&nbsp;case 2:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-warning">//</span> <span class="text-secondary">code to be executed if n = 2;</span></p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf(<span class="random5">&quot;Habibi !&quot;</span>);</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;</p>
+          <p>&nbsp;&nbsp;&nbsp;default:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-warning">//</span> <span class="text-secondary">code to be executed if n doesn't match any cases</span></p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf(<span class="random5">&quot;Cheap Thrills !&quot;</span>);</p>
+          <p>&#125;</p>
+        </div>
+      </div>
     </div>
 
     <hr class="mt-5 mb-5">
 
     <div id="conditional_operator" class="topic">
       <div class="topic-name mb-4">
-        <h2>conditional_operator</h2>
+        <h2>Conditional / Ternary Operator</h2>
       </div>
-      <div class="topic-body"></div>
+      <div class="topic-body">
+        <ul>
+          <li>It returns value according to condition evaluation</li>
+          <li>Syntax : <span class="random3">(Condition ? true_value : false_value);</span></li>
+        </ul>
+        <p class="code_block">int <span class="random6">x</span> = <span class="text-warning">5</span>;</p>
+
+        <table class="table table-bordered table-hover table-striped table-dark mt-4">
+          <tr>
+            <th>Statement</th>
+            <th>Question</th>
+            <th>Result</th>
+          </tr>
+          <tr>
+            <td class="random3">int <span class="random6">y</span> = ( <span class="random7">x == 5</span> ? <span class="text-warning">7</span> : <span class="text-warning">9</span>);</td>
+            <td>y = ?</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td class="random3">int <span class="random6">z</span> = ( <span class="random7">x == 4</span> ? <span class="text-warning">7</span> : <span class="text-warning">9</span>);</td>
+            <td>z = ?</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td class="random3"><span class="random7">x <= 5</span> ? printf(<span class="random5">&quot;%d YAY !&quot;</span>,<span class="random6">z</span>) : printf(<span class="random5">&quot;NAY !&quot;</span>);</td>
+            <td>Output?</td>
+            <td>9 YAY !</td>
+          </tr>
+        </table>
+
+        <div class="code_box mt-5">
+          <p></p>
+          <p></p>
+        </div>
+        <p></p>
+      </div>
     </div>
 
     <hr class="mt-5 mb-5">
@@ -1974,7 +2022,40 @@
       <div class="topic-name mb-4">
         <h2>Arrays</h2>
       </div>
-      <div class="topic-body"></div>
+      <div class="topic-body">
+        <ul>
+          <li>Arrays Can Store Several Data</li>
+          <li>Syntax : <span class="random3">dataType arrayName[arraySize] = 	&#123;element1, element2,...&#125;</span>;</li>
+          <li>Array Name is Variable</li>
+          <li>Array index Starts at 0</li>
+        </ul>
+        <div class="code_box_long text-center mt-5">
+          <p>int <span class="random6">jungle</span>[<span class="text-warning">5</span>] = &#123;3,8,10,32,11&#125;;</p>
+        </div>
+
+        <table class="table table-bordered table-hover table-striped table-dark mt-4">
+          <tr>
+            <th>Statement</th>
+            <th>Question</th>
+            <th>Result</th>
+          </tr>
+          <tr>
+            <td class="random3">printf(<span class="random9">&quot;%d&quot;</span>,<span class="random6">jungle</span>[<span class="text-warning">0</span>]);</td>
+            <td>Output?</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td class="random3">printf(<span class="random9">&quot;%d&quot;</span>,<span class="random6">jungle</span>[<span class="text-warning">2</span>]);</td>
+            <td>Output?</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td class="random3">printf(<span class="random9">&quot;%d&quot;</span>,<span class="random6">jungle</span>[<span class="text-warning">4</span>]);</td>
+            <td>Output?</td>
+            <td>11</td>
+          </tr>
+        </table>
+      </div>
     </div>
 
     <hr class="mt-5 mb-5">
