@@ -1,0 +1,12 @@
+document.write('    <div id="output" class="topic">');
+document.write('      <div class="topic-name mb-4">');
+document.write('        <h2>Output</h2>');
+document.write('      </div>');
+document.write('      <div class="topic-body">');
+document.write('        <p>Following Functions are Used For Output: </p>');
+document.write('        <ul class="random3">');
+document.write('          <li>printf();</li>');
+document.write('          <li>puts();</li>');
+document.write('        </ul>');
+document.write('      </div>');
+document.write('    </div>');

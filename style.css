@@ -90,7 +90,7 @@ p .byby {
   font-size: 16px;
   list-style: none;
 }
-#strings table td {
+#strings .table1 td {
   text-align: center;
 }
 .random2 {
@@ -236,4 +236,7 @@ p .byby {
   margin-bottom:-5px;
   font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
+}
+.ubuntu-font {
+  font-family: 'Ubuntu', sans-serif;
 }

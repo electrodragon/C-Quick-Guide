@@ -1,0 +1,14 @@
+document.write('    <div id="constants" class="topic">');
+document.write('      <div class="topic-name mb-4">');
+document.write('        <h2>Constants</h2>');
+document.write('      </div>');
+document.write('      <div class="topic-body">');
+document.write('        <p>Constants are Similar to Variables, but their Values Can&apos;t be changed !</p>');
+document.write('        <p>There are Two ways to Declare a Constant</p>');
+document.write('        <ul>');
+document.write('          <li>#define <span class="text-warning">LENGTH</span> 10</li>');
+document.write('          <li>const int <span class="text-warning">LENGTH</span> = 10;</li>');
+document.write('        </ul>');
+document.write('        <p>Constants are always in UPPERCASE</p>');
+document.write('      </div>');
+document.write('    </div>');

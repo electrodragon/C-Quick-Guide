@@ -1,0 +1,11 @@
+document.write('    <div id="clear_screen" class="topic">');
+document.write('      <div class="topic-name mb-4">');
+document.write('        <h2>Clearing Screen</h2>');
+document.write('      </div>');
+document.write('      <div class="topic-body">');
+document.write('        <p>Following Function is used to clear Screen !</p>');
+document.write('        <div class="code_box text-center">');
+document.write('          <p>clrscr(); <i class="fab fa-windows ml-4"></i></p>');
+document.write('        </div>');
+document.write('      </div>');
+document.write('    </div>');

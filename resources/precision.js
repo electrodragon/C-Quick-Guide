@@ -1,0 +1,18 @@
+document.write('    <div id="precision" class="topic">');
+document.write('      <div class="topic-name mb-4">');
+document.write('        <h2>Precision</h2>');
+document.write('      </div>');
+document.write('      <div class="topic-body">');
+document.write('        <p>In Float, Precision is used to get specified numbers after decimal point !</p>');
+document.write('        <table class="table table-bordered table-striped table-hover table-info">');
+document.write('          <tr>');
+document.write('            <th>Statement</th>');
+document.write('            <th>Result</th>');
+document.write('          </tr>');
+document.write('          <tr>');
+document.write('            <td class="random3">printf(<span class="random9">&quot;%.2f&quot;</span>, <span class="text-primary">7.45564</span>);</td>');
+document.write('            <td>7.45</td>');
+document.write('          </tr>');
+document.write('        </table>');
+document.write('      </div>');
+document.write('    </div>');

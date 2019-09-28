@@ -1,0 +1,14 @@
+document.write('    <div id="variables" class="topic">');
+document.write('      <div class="topic-name mb-4">');
+document.write('        <h2>Variables</h2>');
+document.write('      </div>');
+document.write('      <div class="topic-body">');
+document.write('        <p>Variable is nothing but a name given to a storage area that our program use.</p>');
+document.write('        <ul>');
+document.write('          <li>int <span class="text-warning">abc</span>;</li>');
+document.write('          <li>int <span class="text-warning">hello_world</span>;</li>');
+document.write('          <li>int <span class="text-warning">jungle</span>;</li>');
+document.write('        </ul>');
+document.write('        <p>Here abc, hello_world and jungle are variables.</p>');
+document.write('      </div>');
+document.write('    </div>');

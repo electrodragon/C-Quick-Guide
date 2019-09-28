@@ -1,0 +1,14 @@
+document.write('    <div id="inputs" class="topic">');
+document.write('      <div class="topic-name mb-4">');
+document.write('        <h2>Input</h2>');
+document.write('      </div>');
+document.write('      <div class="topic-body">');
+document.write('        <p>There Are Several Functions to Get Input !</p>');
+document.write('        <ul class="random3">');
+document.write('          <li>scanf();</li>');
+document.write('          <li>gets();</li>');
+document.write('          <li>getch();</li>');
+document.write('          <li>getche();</li>');
+document.write('        </ul>');
+document.write('      </div>');
+document.write('    </div>');
