@@ -17,7 +17,7 @@ document.write('        <h2 class="mt-4">INBUILT FUNCTIONS FOR STRINGS</h2>');
 document.write('        <table class="table table-bordered table-hover table-striped table-dark">');
 document.write('          <tr>');
 document.write('            <th>Functions</th>');
-document.write('            <td><span class="bold">Description</span> <span class="text-warning ubuntu-font">(LIB: <span class="random6">strings.h</span>)</span></td>');
+document.write('            <td><span class="bold">Description</span> <span class="text-warning ubuntu-font">(LIB: <span class="random6">string.h</span>)</span></td>');
 document.write('          </tr>');
 document.write('          <tr>');
 document.write('            <td class="random3 text-danger">strcat()</td>');
