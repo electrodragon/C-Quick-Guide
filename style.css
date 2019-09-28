@@ -201,3 +201,39 @@ p .byby {
 .random10 {
   color: #8105d8;
 }
+#file_handling table td ul li {
+  list-style: square;
+}
+.example_image_1 {
+  float: right;
+  margin-top: -7%;
+}
+
+.file_content_reading_code {
+  border-radius: 5px;
+  background-color: #2a1a5e;
+  color: #f9d5bb;
+  width: 420px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.file_content_reading_code p {
+  margin-bottom:-5px;
+  font-family: monospace;
+  font-size: 16px;
+}
+.file_content_reading_code_output {
+  border-radius: 5px;
+  background-color: #ffbbcc;
+  color: #ce2e6c;
+  width: 420px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.file_content_reading_code_output p {
+  margin-bottom:-5px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+}

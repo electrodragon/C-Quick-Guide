@@ -6,6 +6,7 @@
   <title>Quick Guide - C</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -259,8 +260,8 @@
           </tr>
           <tr>
             <td>char</td>
-            <td>"a", "b", "H"</td>
-            <td>Stores single Character, enclosed in quotes !</td>
+            <td>&apos;a&apos;, &apos;b&apos;, &apos;H&apos;</td>
+            <td>Stores Single Character, enclosed in Single quotes !</td>
           </tr>
         </table>
       </div>
@@ -274,7 +275,7 @@
       </div>
       <div class="topic-body">
         <p>String are similar to character</p>
-        <p>Any Text Enclosed in Quotes is called String !</p>
+        <p>Any Text Enclosed in Double Quotes is called String !</p>
         <table class="table table-bordered table-dark">
           <tr>
             <td><span class="random2">&quot;Jungle&quot;</span></td>
@@ -730,8 +731,8 @@
           </tr>
           <tr>
             <td class="random3">%c</td>
-            <td class="random3 bg-dark text-light">printf(<span class="random9">&quot;%c&quot;</span>, <span class="random5">&quot;H&quot;</span>);</td>
-            <td>Used to Print Single Character</td>
+            <td class="random3 bg-dark text-light">printf(<span class="random9">&quot;%c&quot;</span>, <span class="random5">&apos;H&apos;</span>);</td>
+            <td>Used to Print Character</td>
           </tr>
           <tr class="bg-dark">
             <td class="random3">%s</td>
@@ -2381,16 +2382,233 @@
       <div class="topic-name mb-4">
         <h2>File Handling / Management</h2>
       </div>
-      <div class="topic-body"></div>
+      <div class="topic-body">
+        <h3>Pointer:</h3>
+        <p class="mb-0 ml-4">To Open A File, we need a pointer !</p>
+        <p class="mb-0 ml-4">Pointer is also like a variable, but it starts with <span class="text-warning random3">*</span> (Asterisk)</p>
+        <p class="ml-4">DataType for file is <span class="text-warning random3">FILE</span></p>
+        <p class="code_block">FILE <span class="text-primary">*abc</span>;</p>
+        <h3>fopen()</h3>
+        <p class="ml-4"><span class="text-warning random3">fopen(<span class="random6">file_path</span>,<span class="random6">opening_mode</span>);</span> this function is used to open a file.</p>
+        <p class="mb-3 code_block"><span class="text-primary">abc</span> = fopen(<span class="random5">&quot;file.txt&quot;</span>,<span class="random5">&quot;a+&quot;</span>)</p>
+        <h3 class="mb-3 mt-4">Opening Modes:</h3>
+        <table class="table table-bordered table-hover table-warning">
+          <tr>
+            <th>Name</th>
+            <th>Mode</th>
+            <th class="random3 random5">File Open Success</th>
+            <th class="text-warning">File !Exist</th>
+            <th class="text-danger">Error</th>
+            <th class="text-center text-primary">Access</th>
+          </tr>
+          <tr>
+            <td class="pt-4">Read</td>
+            <td class="random3 random5 pt-4">"r"</td>
+            <td> <ul class="mb-0">
+              <li><span class="random3">fopen()</span> Loads it in Memory. </li>
+              <li>sets *pointer Point to First Character.</li>
+            </ul> </td>
+            <td colspan="2" class="text-center random3 pt-4">return NULL;</td>
+            <td class="text-center pt-4 random7 bold">R</td>
+          </tr>
+          <tr>
+            <td class="pt-4">Read</td>
+            <td class="random3 random5 pt-4">"r+"</td>
+            <td> <ul class="mb-0">
+              <li><span class="random3">fopen()</span> Loads it in Memory. </li>
+              <li>sets *pointer Point to First Character.</li>
+            </ul> </td>
+            <td colspan="2" class="text-center random3 pt-4">return NULL;</td>
+            <td class="text-center pt-4 random7 bold">RW</td>
+          </tr>
+          <tr>
+            <td>Write</td>
+            <td class="random3 random5">"w"</td>
+            <td> <ul class="mb-0">
+              <li>Contents are overwritten</li>
+            </ul> </td>
+            <td>Creates File</td>
+            <td class="random3">return NULL;</td>
+            <td class="text-center random7 bold">W</td>
+          </tr>
+            <tr>
+            <td>Write</td>
+            <td class="random3 random5">"w+"</td>
+            <td> <ul class="mb-0">
+              <li>Contents are overwritten</li>
+            </ul> </td>
+            <td >Creates File</td>
+            <td class="random3">return NULL;</td>
+            <td class="text-center random7 bold">RW</td>
+          </tr>
+          <tr>
+            <td class="pt-4">Append</td>
+            <td class="random3 random5 pt-4">"a"</td>
+            <td> <ul class="mb-0">
+              <li><span class="random3">fopen()</span> Loads it in Memory. </li>
+              <li>sets *pointer Point to Last Character.</li>
+            </ul> </td>
+            <td class="pt-4">Creates File</td>
+            <td class="random3 pt-4">return NULL;</td>
+            <td class="text-center random7 bold pt-4">W</td>
+          </tr>
+          <tr>
+            <td class="pt-4">Append</td>
+            <td class="random3 random5 pt-4">"a+"</td>
+            <td> <ul class="mb-0">
+              <li><span class="random3">fopen()</span> Loads it in Memory. </li>
+              <li>sets *pointer Point to Last Character.</li>
+            </ul> </td>
+            <td class="pt-4">Creates File</td>
+            <td class="random3 pt-4">return NULL;</td>
+            <td class="text-center random7 bold pt-4">RW</td>
+          </tr>
+        </table>
+      <h3 class="mt-5">fclose()</h3>
+      <p class="ml-4">Used To Close a File.</p>
+      <p class="code_block">fclose(<span class="random6">pointer</span>);</p>
+      <h3 class="mt-5">fputc()</h3>
+      <p class="ml-4">Used To Write a Character in File.</p>
+      <p class="code_block">fputc(<span class="random5">&apos;A&apos;</span>,<span class="random6">pointer</span>);</p>
+      <h3 class="mt-5">fputs()</h3>
+      <p class="ml-4">Used To Write String in File.</p>
+      <p class="code_block">fputs(<span class="random5">&quot;All is Well !&quot;</span>,<span class="random6">pointer</span>);</p>
+      <h3 class="mt-5">fprintf()</h3>
+      <p class="ml-4">Used To Write Formatted String in File.</p>
+      <p class="code_block">fprintf(<span class="random6">pointer</span>,<span class="random5">&quot;I Love You !&quot;</span>);</p>
+      <div class="code_box_long mt-5">
+        <p>int <span class="random6">a</span> = <span class="text-warning">5</span>;</p>
+        <p>fprintf(<span class="random6">pointer</span>,<span class="random5">&quot;Math Loves <span class="random9">%d</span>&quot;</span>,<span class="random7">a</span>);</p>
+      </div>
+      <h3 class="mt-5">EOL</h3>
+      <p class="ml-4">End of File</p>
+      <h3 class="mt-5 mb-4">INBUILT FUNCTIONS FOR FILE HANDLING</h3>
+      <table class="table table-bordered table-striped table-danger table-hover">
+        <tr>
+          <th>Functions</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td class="random3 text-danger">fopen()</td>
+          <td>Creates a new file or opens an existing file.</td>
+        </tr>
+        <tr>
+          <td class="random3 text-danger">fclose()</td>
+          <td>Closes an opened file.</td>
+        </tr>
+        <tr>
+          <td class="random3 text-danger">getw()</td>
+          <td>Reads an integer from file.</td>
+        </tr>
+        <tr>
+          <td class="random3 text-danger">putw()</td>
+          <td>Writes an integer to file.</td>
+        </tr>
+        <tr>
+          <td class="random3 text-danger">fgetc()</td>
+          <td>Reads a character from file.</td>
+        </tr>
+        <tr>
+          <td class="random3 text-danger">fputc()</td>
+          <td>Write a character to file.</td>
+        </tr>
+        <tr>
+          <td class="random3 text-danger">fgets()</td>
+          <td>Reads string from a file, one line at a time.</td>
+        </tr>
+        <tr>
+          <td class="random3 text-danger">fputs()</td>
+          <td>Writes string to a file.</td>
+        </tr>
+        <tr>
+          <td class="random3 text-danger">feof()</td>
+          <td>Finds end of file.</td>
+        </tr>
+        <tr>
+          <td class="random3 text-danger">fprintf()</td>
+          <td>Writes formatted data to a file.</td>
+        </tr>
+        <tr>
+          <td class="random3 text-danger">fscanf()</td>
+          <td>Reads formatted data from a file.</td>
+        </tr>
+        <tr>
+          <td class="random3 text-danger">fseek()</td>
+          <td>Moves file pointer position to given location.</td>
+        </tr>
+        <tr>
+          <td class="random3 text-danger">SEEK_SET</td>
+          <td>SEEK_SET moves file pointer position to the beginning of the file.</td>
+        </tr>
+        <tr>
+          <td class="random3 text-danger">SEEK_CUR</td>
+          <td>SEEK_CUR moves file pointer position to given location.</td>
+        </tr>
+        <tr>
+          <td class="random3 text-danger">SEEK_END</td>
+          <td>SEEK_END moves file pointer position to the end of file.</td>
+        </tr>
+        <tr>
+          <td class="random3 text-danger">ftell()</td>
+          <td>Gives current position of file pointer.</td>
+        </tr>
+        <tr>
+          <td class="random3 text-danger">rewind()</td>
+          <td>Moves file pointer position to the beginning of the file.</td>
+        </tr>
+        <tr>
+          <td class="random3 text-danger">remove()</td>
+          <td>Deletes a file.</td>
+        </tr>
+        <tr>
+          <td class="random3 text-danger">fflush()</td>
+          <td>Flushes a file.</td>
+        </tr>
+      </table>
+      <h3 class="mt-5">Reading Data</h3>
+      <p class="ml-4">Loop is Used To Fetch/Read Data !</p>
+      <img class="example_image_1" src="file.txt.jpg" alt="file to read data from.">
+      <div class="file_content_reading_code">
+        <p><span class="text-info">char</span> ch;</p>
+        <p><span class="text-info">FILE</span> *zedd;</p>
+        <p class="mt-3">zedd = <span class="text-primary">fopen</span>(<span class="random5">&quot;file.txt&quot;</span>,<span class="random5">&quot;r&quot;</span>);</p>
+        <p class="mt-3"><span class="random6">while</span> ((ch = <span class="text-primary">fgetc</span>(zedd)) != <span class="text-warning">EOF</span>) &#123;</p>
+        <p class="ml-5 mt-2"><span class="text-primary">printf</span>(<span class="random5">&quot;</span><span class="random9">%c</span><span class="random5">&quot;</span>,ch);</p>
+        <p>&#125;</p>
+      </div>
+      <div class="file_content_reading_code_output mt-3">
+        <p>You make a weekend feel like a year</p>
+        <p>Baby, you got me changing</p>
+        <p>24/7, I want you here</p>
+        <p>I hope you feel the same thing</p>
+        <p class="mt-3"></p>
+        <p>I want you to be the one that's on my mind</p>
+        <p>On my mind, on my mind</p>
+        <p>I want you to be there on a Monday night</p>
+        <p>Tuesday night, every night</p>
+        <p>Are you gonna be the one that's on my mind?</p>
+        <p>3-6-5, all the time</p>
+        <p>I want you to be the one to stay</p>
+        <p>And give me the night and day</p>
+      </div>
+    </div>
     </div>
 
     <hr class="mt-5 mb-5">
+
+    <script type="text/javascript">
+      function gotoProjects() {
+        window.location = 'projects.html';
+      }
+    </script>
 
     <div id="Projects" class="topic">
       <div class="topic-name mb-4">
         <h2>Projects</h2>
       </div>
-      <div class="topic-body"></div>
+      <div class="topic-body">
+        <button type="button" class="btn btn-dark" onclick="gotoProjects();">Start Projects !</button>
+      </div>
     </div>
 
     <hr class="mt-5 mb-5">
