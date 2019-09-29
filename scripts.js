@@ -7,12 +7,18 @@ function goto_index() {
 }
 
 function solution_box_empty() {
-  document.getElementById('solution_box').innerHTML = '';
-  document.getElementById('solution_box').style = "padding:0";
+  let all_boxes = document.querySelectorAll('.solution_box');
+  for (let i=1; i<=all_boxes.length; i++) {
+    document.querySelectorAll(`.project${i}_solution_bx`)[0].innerHTML = '';
+    document.querySelectorAll(`.project${i}_solution_bx`)[0].style = 'padding:0;';
+  }
 }
 
 function mkQuestion(num,q) {
+  document.write('<div class="solution">');
   document.write(`<p class="ubuntu-font" onclick="project${num}_solution();">${num}. ${q}</p>`);
+  document.write(`<div class="solution_box project${num}_solution_bx" onclick="solution_box_empty()"></div>`);
+  document.write('</div>');
 }
 
 function space(num) {
@@ -23,21 +29,36 @@ function space(num) {
   return spc;
 }
 
-function write_solution(solution) {
+function create_content(solution) {
   let content = '';
   solution.forEach(function (item){
     content += '<p>'+item+'</p>';
   });
+  return content;
+}
 
-  if (document.getElementById('solution_box').innerHTML != '') {
-    solution_box_empty();
+function write_solution(solution,output,num) {
+  let prevContent = document.getElementsByClassName(`project${num}_solution_bx`)[0].innerHTML;
+  solution = create_content(solution);
+  output = create_content(output);
+
+  solution_box_empty();
+
+  if (prevContent === output) {
+    document.getElementsByClassName(`project${num}_solution_bx`)[0].innerHTML = solution;
   } else {
-    document.getElementById('solution_box').innerHTML = content;
-    document.getElementById('solution_box').style = "padding: 10px 0 10px 10px;";
+    document.getElementsByClassName(`project${num}_solution_bx`)[0].innerHTML = output;
   }
+  document.getElementsByClassName(`project${num}_solution_bx`)[0].style = "padding: 10px 10px 10px 10px;";
 }
 
 function project1_solution() {
+  let odds = []
+  for (let i=1; i<=10; i++) {
+    if (i%2 != 0) {
+      odds.push(i);
+    }
+  }
   write_solution([
     '#include &lt;stdio.h&gt;',
     space(1),
@@ -51,10 +72,16 @@ function project1_solution() {
     space(4)+'&#125;',
     space(4)+'return 0;',
     '&#125;'
-  ]);
+  ],odds,1);
 }
 
 function project2_solution() {
+  let odds = []
+  for (let i=1; i<=10; i++) {
+    if (i%2 == 0) {
+      odds.push(i);
+    }
+  }
   write_solution([
     '#include &lt;stdio.h&gt;',
     space(1),
@@ -67,10 +94,14 @@ function project2_solution() {
     space(4)+'&#125;',
     space(4)+'return 0;',
     '&#125;'
-  ]);
+  ],odds,2);
 }
 
 function project3_solution() {
+  let descending = [];
+  for (let i=10; i>=1; i--) {
+    descending.push(i);
+  }
   write_solution([
     '#include &lt;stdio.h&gt;',
     space(1),
@@ -82,5 +113,5 @@ function project3_solution() {
     space(4)+'&#125; while (i &gt;= 1);',
     space(4)+'return 0;',
     '&#125;'
-  ]);
+  ],descending,3);
 }

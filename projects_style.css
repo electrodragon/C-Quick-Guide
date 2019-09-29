@@ -22,16 +22,16 @@ p .byby {
   font-family: 'Ubuntu', sans-serif;
   font-size: 20px;
 }
-#solution_box {
-  margin: auto;
-  width: 40%;
-  float : right;
-  margin-top: -5%;
-  margin-bottom: 10%;
-  margin-right: 5px;
+.solution {
+  position: relative;
+}
+.solution_box {
+  position: absolute;
+  left: 60%;
+  top:0;
   background-color: #ff8080;
 }
-#solution_box p {
+.solution_box p {
   margin-bottom: -4px;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
