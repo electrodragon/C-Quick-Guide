@@ -115,3 +115,27 @@ function project3_solution() {
     '&#125;'
   ],descending,3);
 }
+
+function project4_solution() {
+  write_solution([
+    '#include &lt;stdio.h&gt;',
+    space(1),
+    'int main() &#123;',
+    space(4)+'int a,b;',
+    space(4)+'printf("Enter First Number: ");',
+    space(4)+'scanf("%d", &a);',
+    space(4)+'printf("Enter Second Number: ");',
+    space(4)+'scanf("%d",&b);',
+    space(4)+'if (a > b) &#123;',
+    space(8)+'printf(&quot;%d is Bigger than %d !&#92;n&quot;, a, b);',
+    space(4)+'&#125; else &#123;',
+    space(8)+'printf(&quot;%d is Bigger than %d !&#92;n&quot;, b, a);',
+    space(4)+'&#125;',
+    space(4)+'return 0;',
+    '&#125;'
+  ],[
+    "Enter First Number: 5",
+    "Enter Second Number: 7",
+    "7 is Bigger than 5 !"
+  ],4);
+}
