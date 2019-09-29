@@ -13,7 +13,7 @@ document.write('                  <p>int <span class="random9">a</span> = <span 
 document.write('                  <p class="random6">JUNGLE:</p>');
 document.write('                  <p>a++;</p>');
 document.write('                  <p>while (<span class="random7">a &lt; 5</span>) &#123;</p>');
-document.write('              <p>&nbsp;&nbsp;&nbsp;&nbsp;printf(<span class="random5">&quot;<span class="random9">%d</span><span class="text-primary">\n</span>&quot;</span>,<span class="random6">a</span>);</p>');
+document.write('              <p>&nbsp;&nbsp;&nbsp;&nbsp;printf(<span class="random5">&quot;<span class="random9">%d</span><span class="text-primary">\\n</span>&quot;</span>,<span class="random6">a</span>);</p>');
 document.write('              <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-primary">goto</span> <span class="random6">JUNGLE</span>;</p>');
 document.write('                  <p>&#125;</p>');
 document.write('              </div>');
