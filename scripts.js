@@ -2,6 +2,12 @@ function gotoProjects() {
   window.location = "projects.html";
 }
 
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 function goto_index() {
   window.location = "index.html";
 }
@@ -42,12 +48,21 @@ function write_solution(solution,output,num) {
   solution = create_content(solution);
   output = create_content(output);
 
-  solution_box_empty();
-
-  if (prevContent === output) {
-    document.getElementsByClassName(`project${num}_solution_bx`)[0].innerHTML = solution;
+  if (num === 5) {
+    let prevOutput = document.querySelectorAll('.project5_solution_bx')[0].innerText.slice(0,5);
+    solution_box_empty();
+    if (prevOutput == "Enter") {
+      document.getElementsByClassName(`project${num}_solution_bx`)[0].innerHTML = solution;
+    } else {
+      document.getElementsByClassName(`project${num}_solution_bx`)[0].innerHTML = output;
+    }
   } else {
-    document.getElementsByClassName(`project${num}_solution_bx`)[0].innerHTML = output;
+    solution_box_empty();
+    if (prevContent === output) {
+      document.getElementsByClassName(`project${num}_solution_bx`)[0].innerHTML = solution;
+    } else {
+      document.getElementsByClassName(`project${num}_solution_bx`)[0].innerHTML = output;
+    }
   }
   document.getElementsByClassName(`project${num}_solution_bx`)[0].style = "padding: 10px 10px 10px 10px;";
 }
@@ -138,4 +153,40 @@ function project4_solution() {
     "Enter Second Number: 7",
     "7 is Bigger than 5 !"
   ],4);
+}
+
+function project5_solution() {
+  let random_num = getRandomInt(2,10);
+  let output = [`Enter Number: ${random_num}`];
+  let i = random_num;
+  for(; i>=1; i--) {
+    let str = '';
+    for (let j=1; j<=i; j++) {
+      str += '*';
+    }
+    output.push(str);
+  }
+
+  write_solution([
+    '#include &lt;stdio.h&gt;',
+    'int print_stars(int count);',
+    space(1),
+    'int main() &#123;',
+    space(4)+'int a;',
+    space(4)+'printf("Enter Number: ");',
+    space(4)+'scanf(&quot;%d&quot;, &amp;a);',
+    space(4)+'for (; a &gt;= 1; a--) &#123;',
+    space(8)+'print_stars(a);',
+    space(4)+'&#125;',
+    space(4)+'return 0;',
+    '&#125;',
+    space(1),
+    'int print_stars(int count) &#123;',
+    space(4)+'int i;',
+    space(4)+'for (i=1; i<=count; i++) &#123;',
+    space(8)+'printf(&quot;*&quot;);',
+    space(4)+'&#125;',
+    space(4)+'printf("&#92;n");',
+    '&#125;',
+  ],output,5);
 }
