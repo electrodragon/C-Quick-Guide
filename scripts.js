@@ -125,7 +125,7 @@ function project4_solution() {
     space(4)+'printf("Enter First Number: ");',
     space(4)+'scanf("%d", &a);',
     space(4)+'printf("Enter Second Number: ");',
-    space(4)+'scanf("%d",&b);',
+    space(4)+'scanf("%d", &b);',
     space(4)+'if (a > b) &#123;',
     space(8)+'printf(&quot;%d is Bigger than %d !&#92;n&quot;, a, b);',
     space(4)+'&#125; else &#123;',
